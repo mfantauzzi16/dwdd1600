@@ -173,11 +173,11 @@ div.gallery figure {
     margin: .5rem;
 }
 
-.form label, .form select, .form [type=text], .form [type=tel], .form textarea {
+.form label, .form select, .form [type=text], .form [type=tel], .form [type=email], .form textarea {
     display: block;
 }
 
-.form [type=text], .form [type=tel], .form select, .form textarea {
+.form [type=text], .form [type=tel], .form [type=email], .form select, .form textarea {
     border: solid 1px #888;
     padding: .3rem;
     width: 250px;
