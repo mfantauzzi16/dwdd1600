@@ -1,0 +1,294 @@
+/* colors: 
+        green - color: #858c51;
+        yellow - color: #f29f05;
+        cream - color: #f2daac;
+        orange - color: #f25835;
+        pink - color: #f28888;
+        */
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Epunda Slab", serif;
+    margin: 0;
+}
+
+/* header stuff here */
+
+header {
+    background-color: #f2daac;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #858c51;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+/* SMALL navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #858c51;
+        text-decoration: none;
+        border-bottom: solid 1px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    nav .active a {
+        background-color: #858c51;
+        color: #f29f05;
+        background-image: linear-gradient(to bottom, #858c51, #5c6137);
+    }
+} /* end SMALL nav */
+
+/* LARGE nav stuff here */
+@media only screen and (min-width: 801px) {
+nav {
+    background-color: #858c51;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #f29f05;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #f28888;
+    color: #858c51;
+}
+
+nav li a:hover {
+    color: #f2daac;
+}
+}/* end LARGE nav */
+
+/* main stuff here */
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #f29f05;
+}
+
+main h2 {
+    color: #f25835;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+main dl {
+    background-color:#f2daac;
+    margin: 10px;
+}
+
+main dl dt {
+    color:#858c51;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color:#f29f05;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color:#f2daac;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main em {
+    font-weight: 600;
+}
+
+main address.homepage {
+    font-style: normal;
+    background-color: #858c51;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1.75px solid #f29f05;
+    width: 200px;
+}
+
+main address {
+    color:#f29f05;
+}
+
+main a {
+    color: #f29f05;
+}
+
+main a:hover {
+    color: #f25835;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* main image stuff here */
+
+figure.wrapped {
+    margin: 0 10px 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* gallery stuff */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(242, 136, 136, 0.75);
+}
+
+/* Form stuff here */
+.form fieldset {
+    border: 1.5px solid #f28888;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.form legend {
+    color: #f28888;
+    font-size: .8rem;
+}
+
+.form label {
+    margin: .5rem;
+}
+
+.form label, .form select, .form [type=text], .form [type=tel], .form [type=email], .form textarea {
+    display: block;
+}
+
+.form [type=text], .form [type=tel], .form [type=email], .form select, .form textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Epunda Slab", serif;
+}
+
+.form textarea {
+    height: 6rem;
+}
+
+.form :required {
+    background-color: #ecd2a3;
+}
+
+.request {
+    background-color: #ecd2a3;
+}
+
+.form [type=submit] {
+    background-color: #858c51;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-size: .8rem;
+}
+
+/* table stuff here */
+table.tools {
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.tools th {
+    background-color: #858c51;
+    color: #f29f05;
+    padding: .6rem .6rem 2%;
+    text-align: left;
+}
+
+table.tools td {
+    color:#f28888;
+    padding: .4rem 2%;
+}
+
+table.tools tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+table.tools tr:hover {
+    background-color: #ddd;
+}
+
+
+/* footer stuff here */
+
+footer {
+    background-color: #f2daac;
+    text-align: center;
+    padding: .25rem 0;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: black;
+    letter-spacing: 2.5px;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
